@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>work.icql</groupId>
+    <artifactId>icm-dependence-server</artifactId>
+    <version>Aston1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!--版本依赖-->
+        <base.version>2.4.3</base.version>
+        <external.version>0.0.1-SNAPSHOT</external.version>
+        <infra.version>0.0.1-SNAPSHOT</infra.version>
+        <xxx.version>Aston1-SNAPSHOT</xxx.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+
+            <!--base依赖-->
+            <dependency>
+                <groupId>work.icql</groupId>
+                <artifactId>icm-dependence-base</artifactId>
+                <version>${base.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!--外部依赖-->
+            <dependency>
+                <groupId>work.icql</groupId>
+                <artifactId>icm-dependence-server-external</artifactId>
+                <version>${external.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!--基架组infra依赖-->
+            <dependency>
+                <groupId>work.icql</groupId>
+                <artifactId>icm-dependence-server-infra</artifactId>
+                <version>${infra.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!--开发组xxx依赖-->
+            <dependency>
+                <groupId>work.icql</groupId>
+                <artifactId>icm-dependence-server-xxx</artifactId>
+                <version>${xxx.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+</project>
