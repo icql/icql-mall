@@ -65,11 +65,23 @@ yyy-开发组
 | icm-product-c-service               | 商品域-c端-服务       |
 | icm-product-b-service               | 商品域-b端-服务       |
 
+
+
+修改第一个记录
+git rebase -i --root
+
+修改其他记录，后面的offset按需调整
 git rebase -i HEAD~5
 
+i进入修改模式，将需要更改的命令改为 e
+
+:wq 保存
+
+输入命令 
 GIT_COMMITTER_DATE="2022-09-13T10:22:00+0800" git commit --amend --date="2022-09-13T10:22:00+0800"  --author "icql <icqlchen@qq.com>"
 
 git rebase --continue
+
 git push -f
 
 ## 开发规范
