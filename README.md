@@ -67,7 +67,7 @@ yyy-开发组
 
 
 
-修改第一个记录
+修改所有记录
 git rebase -i --root
 
 修改其他记录，后面的offset按需调整
@@ -78,7 +78,7 @@ i进入修改模式，将需要更改的命令改为 e
 :wq 保存
 
 输入命令 
-GIT_COMMITTER_DATE="2022-09-13T10:22:00+0800" git commit --amend --date="2022-09-13T10:22:00+0800"  --author "icql <icqlchen@qq.com>"
+GIT_COMMITTER_DATE="2022-09-13 10:22:00" git commit --amend --date="2022-09-13 10:22:00"  --author "icql <icqlchen@qq.com>"
 
 git rebase --continue
 
