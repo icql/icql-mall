@@ -1,5 +1,8 @@
 package work.icql.icm.dependence.spi.model;
 
+import lombok.Getter;
+
+@Getter
 public enum IcmRespCode {
     SUCCESS("0", ""),
     ERROR("-1","系统异常")
@@ -21,11 +24,4 @@ public enum IcmRespCode {
         this.message = message;
     }
 
-    public String getCode() {
-        return code;
-    }
-
-    public String getMessage() {
-        return message;
-    }
 }

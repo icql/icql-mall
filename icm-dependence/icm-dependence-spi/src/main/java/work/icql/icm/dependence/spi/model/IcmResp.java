@@ -13,16 +13,16 @@ public class IcmResp<T> {
 
     private T data;
 
-    public static <T> IcmResp<T> success() {
-        return success(null);
-    }
-
     public boolean isSuccess() {
         return Objects.equals(this.code, IcmRespCode.SUCCESS.getCode());
     }
 
     public boolean isFail() {
         return !Objects.equals(this.code, IcmRespCode.SUCCESS.getCode());
+    }
+
+    public static <T> IcmResp<T> success() {
+        return success(null);
     }
 
     public static <T> IcmResp<T> success(T data) {
