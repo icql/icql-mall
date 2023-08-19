@@ -36,7 +36,7 @@ public class IcmResp<T> {
     public static <T> IcmResp<T> fail(IcmRespCode code) {
         IcmResp<T> icmResp = new IcmResp<>();
         icmResp.setCode(code.getCode());
-        icmResp.setMsg(code.getMessage());
+        icmResp.setMsg(code.getMsg());
         return icmResp;
     }
 }

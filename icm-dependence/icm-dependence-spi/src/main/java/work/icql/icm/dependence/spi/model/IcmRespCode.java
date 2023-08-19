@@ -17,11 +17,11 @@ public enum IcmRespCode {
     /**
      * 状态提示信息
      */
-    private final String message;
+    private final String msg;
 
-    IcmRespCode(String code, String message) {
+    IcmRespCode(String code, String msg) {
         this.code = code;
-        this.message = message;
+        this.msg = msg;
     }
 
 }
