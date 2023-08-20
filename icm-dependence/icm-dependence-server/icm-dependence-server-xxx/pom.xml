@@ -24,13 +24,13 @@
             <!--product-b-service-->
             <dependency>
                 <groupId>work.icql</groupId>
-                <artifactId>icm-product-b-service-spi</artifactId>
+                <artifactId>icm-product-b-spi</artifactId>
                 <version>${icm-product-b-service-spi-version}</version>
             </dependency>
             <!--product-c-service-->
             <dependency>
                 <groupId>work.icql</groupId>
-                <artifactId>icm-product-c-service-spi</artifactId>
+                <artifactId>icm-product-c-spi</artifactId>
                 <version>${icm-product-c-service-spi-version}</version>
             </dependency>
 
