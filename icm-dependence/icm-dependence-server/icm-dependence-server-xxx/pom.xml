@@ -15,8 +15,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <!--管理的spi依赖-->
-        <icm-product-b-service-spi-version>0.0.1-SNAPSHOT</icm-product-b-service-spi-version>
-        <icm-product-c-service-spi-version>0.0.1-SNAPSHOT</icm-product-c-service-spi-version>
+        <icm-product-b-spi-version>0.0.1-SNAPSHOT</icm-product-b-spi-version>
+        <icm-product-c-spi-version>0.0.1-SNAPSHOT</icm-product-c-spi-version>
     </properties>
 
     <dependencyManagement>
@@ -25,13 +25,13 @@
             <dependency>
                 <groupId>work.icql</groupId>
                 <artifactId>icm-product-b-spi</artifactId>
-                <version>${icm-product-b-service-spi-version}</version>
+                <version>${icm-product-b-spi-version}</version>
             </dependency>
             <!--product-c-service-->
             <dependency>
                 <groupId>work.icql</groupId>
                 <artifactId>icm-product-c-spi</artifactId>
-                <version>${icm-product-c-service-spi-version}</version>
+                <version>${icm-product-c-spi-version}</version>
             </dependency>
 
         </dependencies>
