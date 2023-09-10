@@ -5,19 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>work.icql</groupId>
-    <artifactId>icm-dependence-server-infra</artifactId>
-    <version>Aston1-SNAPSHOT</version>
-    <packaging>pom</packaging>
+    <artifactId>icm-starter</artifactId>
+    <version>1.0-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
-    <dependencyManagement>
-        <dependencies>
-        </dependencies>
-    </dependencyManagement>
 
 </project>

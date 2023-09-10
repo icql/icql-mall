@@ -8,6 +8,9 @@
     <artifactId>icm-dependence-server</artifactId>
     <version>Aston1-SNAPSHOT</version>
     <packaging>pom</packaging>
+    <modules>
+        <module>icm-dependence-server-starter</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -17,7 +20,8 @@
         <!--版本依赖-->
         <base.version>2.4.3</base.version>
         <external.version>0.0.1-SNAPSHOT</external.version>
-        <infra.version>0.0.1-SNAPSHOT</infra.version>
+        <starter.version>0.0.1-SNAPSHOT</starter.version>
+        <infra.version>Aston1-SNAPSHOT</infra.version>
         <xxx.version>Aston1-SNAPSHOT</xxx.version>
     </properties>
 
@@ -38,6 +42,15 @@
                 <groupId>work.icql</groupId>
                 <artifactId>icm-dependence-server-external</artifactId>
                 <version>${external.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!--starter依赖-->
+            <dependency>
+                <groupId>work.icql</groupId>
+                <artifactId>icm-dependence-server-starter</artifactId>
+                <version>${starter.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
