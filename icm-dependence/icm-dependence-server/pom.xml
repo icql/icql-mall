@@ -9,7 +9,10 @@
     <version>Aston1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
+        <module>icm-dependence-server-external</module>
+        <module>icm-dependence-server-infra</module>
         <module>icm-dependence-server-starter</module>
+        <module>icm-dependence-server-xxx</module>
     </modules>
 
     <properties>
@@ -18,7 +21,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <!--版本依赖-->
-        <base.version>2.4.3</base.version>
+        <base.version>0.0.1-SNAPSHOT</base.version>
         <external.version>0.0.1-SNAPSHOT</external.version>
         <starter.version>0.0.1-SNAPSHOT</starter.version>
         <infra.version>Aston1-SNAPSHOT</infra.version>

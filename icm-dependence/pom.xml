@@ -7,14 +7,11 @@
         <module>icm-dependence-base</module>
         <module>icm-dependence-server</module>
         <module>icm-dependence-spi</module>
-        <module>icm-dependence-server/icm-dependence-server-infra</module>
-        <module>icm-dependence-server/icm-dependence-server-external</module>
-        <module>icm-dependence-server/icm-dependence-server-xxx</module>
     </modules>
 
     <groupId>work.icql</groupId>
     <artifactId>icm-dependence</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.1-SNAPSHORT</version>
     <packaging>pom</packaging>
 
     <properties>
