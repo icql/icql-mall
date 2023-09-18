@@ -10,8 +10,9 @@
     <packaging>pom</packaging>
     <modules>
         <module>icm-dependence-server-external</module>
-        <module>icm-dependence-server-infra</module>
         <module>icm-dependence-server-starter</module>
+
+        <module>icm-dependence-server-infra</module>
         <module>icm-dependence-server-xxx</module>
     </modules>
 
@@ -24,8 +25,10 @@
         <base.version>0.0.1-SNAPSHOT</base.version>
         <external.version>0.0.1-SNAPSHOT</external.version>
         <starter.version>0.0.1-SNAPSHOT</starter.version>
+
         <infra.version>Aston1-SNAPSHOT</infra.version>
         <xxx.version>Aston1-SNAPSHOT</xxx.version>
+
     </properties>
 
     <dependencyManagement>
