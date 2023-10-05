@@ -58,14 +58,19 @@ yyy-开发组
 | icm-infra-mp-open-gateway   | 基础支撑域-商家开放平台网关 |
 | icm-infra-op-gateway        | 基础支撑域-运营平台网关   |
 | ...                         |                |
-| icm-product-c               | 商品域-c端         |
+| icm-product-a               | 商品域-a端         |
 | icm-product-b               | 商品域-b端         |
+| icm-product-c               | 商品域-c端         |
 
+```
 a端：admin 管理端
 b端：business 商家端
 c端：customer 客户端
 
+a+b=o a端+b端=操作端
+```
 
+```
 修改所有记录
 git rebase -i --root
 
@@ -79,9 +84,13 @@ i进入修改模式，将需要更改的命令改为 e
 输入命令 
 GIT_COMMITTER_DATE="2022-09-13 10:22:00" git commit --amend --date="2022-09-13 10:22:00"  --author "icql <icqlchen@qq.com>"
 
+:wq 保存
+
 git rebase --continue
 
 git push -f
+
+```
 
 ## 开发规范
 
