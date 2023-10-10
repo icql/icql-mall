@@ -66,8 +66,7 @@ yyy-开发组
 a端：admin 管理端
 b端：business 商家端
 c端：customer 客户端
-
-a+b=o a端+b端=操作端
+o端：operation 操作端=a端+b端
 ```
 
 ```
