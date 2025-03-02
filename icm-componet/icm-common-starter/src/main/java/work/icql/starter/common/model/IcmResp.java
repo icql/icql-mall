@@ -17,7 +17,7 @@ public class IcmResp<T> {
         return Objects.equals(this.code, IcmRespCode.SUCCESS.getCode());
     }
 
-    public boolean isFail() {
+    public boolean isFailure() {
         return !Objects.equals(this.code, IcmRespCode.SUCCESS.getCode());
     }
 
@@ -33,7 +33,7 @@ public class IcmResp<T> {
         return icmResp;
     }
 
-    public static <T> IcmResp<T> fail(IcmRespCode code) {
+    public static <T> IcmResp<T> failure(IcmRespCode code) {
         IcmResp<T> icmResp = new IcmResp<>();
         icmResp.setCode(code.getCode());
         icmResp.setMsg(code.getMsg());
