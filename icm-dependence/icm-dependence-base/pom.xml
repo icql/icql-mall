@@ -19,7 +19,7 @@
 
     <dependencyManagement>
         <dependencies>
-            <!--springboot依赖-->
+            <!--spring-boot依赖-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
