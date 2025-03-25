@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>work.icql</groupId>
-    <artifactId>icm-common-starter</artifactId>
+    <artifactId>icm-common</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
@@ -14,6 +14,7 @@
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
+        <!--版本依赖-->
         <icm-dependence-base.version>0.0.1-SNAPSHOT</icm-dependence-base.version>
     </properties>
 
@@ -26,10 +27,15 @@
             <scope>compile</scope>
         </dependency>
 
-        <!--spring-web依赖-->
+        <!--jackson依赖-->
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.datatype</groupId>
+            <artifactId>jackson-datatype-jsr310</artifactId>
             <scope>compile</scope>
         </dependency>
 
@@ -46,5 +52,4 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
 </project>
