@@ -10,7 +10,6 @@
     <packaging>pom</packaging>
     <modules>
         <module>icm-dependence-server-external</module>
-        <module>icm-dependence-server-starter</module>
 
         <module>icm-dependence-server-infra</module>
         <module>icm-dependence-server-xxx</module>
