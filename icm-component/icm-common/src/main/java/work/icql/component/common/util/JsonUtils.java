@@ -1,4 +1,4 @@
-package work.icql.starter.common.util;
+package work.icql.component.common.util;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -16,7 +16,6 @@ import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Objects;
 import java.util.TimeZone;
 
 public final class JsonUtils {

@@ -1,4 +1,4 @@
-package work.icql.starter.common.model;
+package work.icql.component.common.model;
 
 import lombok.Getter;
 

@@ -1,4 +1,4 @@
-package work.icql.starter.common.util;
+package work.icql.component.common.util;
 
 
 public final class DateUtils {
