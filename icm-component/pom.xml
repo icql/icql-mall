@@ -8,8 +8,9 @@
     <artifactId>icm-component</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+
     <modules>
-        <module>icm-common</module>
+        <module>icm-component-common</module>
     </modules>
 
     <properties>

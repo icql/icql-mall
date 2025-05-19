@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>work.icql</groupId>
-    <artifactId>icm-dependence-server</artifactId>
+    <artifactId>icm-dependence-server-spi</artifactId>
     <version>Aston1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
@@ -23,7 +23,7 @@
         <!--版本依赖-->
         <base.version>0.0.1-SNAPSHOT</base.version>
         <external.version>0.0.1-SNAPSHOT</external.version>
-        <starter.version>0.0.1-SNAPSHOT</starter.version>
+        <component.version>0.0.1-SNAPSHOT</component.version>
 
         <infra.version>Aston1-SNAPSHOT</infra.version>
         <xxx.version>Aston1-SNAPSHOT</xxx.version>
@@ -54,8 +54,8 @@
             <!--starter依赖-->
             <dependency>
                 <groupId>work.icql</groupId>
-                <artifactId>icm-dependence-server-starter</artifactId>
-                <version>${starter.version}</version>
+                <artifactId>icm-component-common</artifactId>
+                <version>${component.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

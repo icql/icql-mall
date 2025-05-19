@@ -41,7 +41,7 @@
         <dependencies>
             <dependency>
                 <groupId>work.icql</groupId>
-                <artifactId>icm-dependence-server</artifactId>
+                <artifactId>icm-dependence-server-spi</artifactId>
                 <version>${icm-dependence-server.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
