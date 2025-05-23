@@ -6,49 +6,59 @@
 
     <groupId>work.icql</groupId>
     <artifactId>icm-dependence-spi</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <version>Aston1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>icm-dependence-spi-base</module>
+        <module>icm-dependence-spi-infra</module>
+        <module>icm-dependence-spi-xxx</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <icm-dependence-base.version>0.0.1-SNAPSHOT</icm-dependence-base.version>
-        <icm-dependence-component.version>0.0.1-SNAPSHOT</icm-dependence-component.version>
-    </properties>
+        <!--版本依赖-->
+        <base.version>0.0.1-SNAPSHOT</base.version>
+        <external.version>0.0.1-SNAPSHOT</external.version>
+        <component.version>0.0.1-SNAPSHOT</component.version>
 
-    <dependencies>
-        <!--公共组件依赖-->
-        <dependency>
-            <groupId>work.icql</groupId>
-            <artifactId>icm-component-common</artifactId>
-            <scope>compile</scope>
-        </dependency>
-        <!--spring-web依赖-->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
-            <scope>compile</scope>
-        </dependency>
-    </dependencies>
+        <infra.version>Aston1-SNAPSHOT</infra.version>
+        <xxx.version>Aston1-SNAPSHOT</xxx.version>
+
+    </properties>
 
     <dependencyManagement>
         <dependencies>
+
+            <!--base依赖-->
             <dependency>
                 <groupId>work.icql</groupId>
                 <artifactId>icm-dependence-base</artifactId>
-                <version>${icm-dependence-base.version}</version>
+                <version>${base.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+            <!--基架组infra依赖-->
             <dependency>
                 <groupId>work.icql</groupId>
-                <artifactId>icm-dependence-component</artifactId>
-                <version>${icm-dependence-component.version}</version>
+                <artifactId>icm-dependence-spi-infra</artifactId>
+                <version>${infra.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+            <!--开发组xxx依赖-->
+            <dependency>
+                <groupId>work.icql</groupId>
+                <artifactId>icm-dependence-spi-xxx</artifactId>
+                <version>${xxx.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 

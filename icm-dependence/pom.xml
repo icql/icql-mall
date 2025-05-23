@@ -6,8 +6,6 @@
     <modules>
         <module>icm-dependence-base</module>
         <module>icm-dependence-spi</module>
-        <module>icm-dependence-component</module>
-        <module>icm-dependence-server-spi</module>
     </modules>
 
     <groupId>work.icql</groupId>
