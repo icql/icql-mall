@@ -25,7 +25,7 @@
             <artifactId>icm-product-b-spi</artifactId>
         </dependency>
 
-        <!--springboot-->
+        <!--spring-boot-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot</artifactId>
@@ -41,7 +41,7 @@
         <dependencies>
             <dependency>
                 <groupId>work.icql</groupId>
-                <artifactId>icm-dependence-server-spi</artifactId>
+                <artifactId>icm-dependence-spi</artifactId>
                 <version>${icm-dependence-server.version}</version>
                 <type>pom</type>
                 <scope>import</scope>

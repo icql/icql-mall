@@ -3,6 +3,7 @@ package work.icql.icm.product.c.spi;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import work.icql.component.common.model.IcmResp;
 import work.icql.icm.product.c.spi.request.QueryProductBatchReq;
 import work.icql.icm.product.c.spi.request.QueryProductReq;
 import work.icql.icm.product.c.spi.response.QueryProductBatchRsp;
