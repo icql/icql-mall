@@ -1,6 +1,6 @@
-package work.icql.icm.product.b.server.doc.code.designpattern.creational.factory.factorymethod.object;
-
-import work.icql.java.designpattern.creational.factory.factorymethod.IObject;
-
-public class ObjectB implements IObject {
-}
+//package work.icql.icm.product.b.server.doc.code.designpattern.creational.factory.factorymethod.object;
+//
+//import work.icql.java.designpattern.creational.factory.factorymethod.IObject;
+//
+//public class ObjectB implements IObject {
+//}
