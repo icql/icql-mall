@@ -14,12 +14,12 @@ public class DesensitizationUtil {
      * 手机号脱敏（保留前3后4）
      *
      * @param phone 手机号
-     * @return 脱敏结果（如：138*​**​*5678）或原值（输入不合法时）
+     * @return 脱敏结果（如：138****5678）或原值（输入不合法时）
      */
     public static String maskPhone(String phone) {
         return Optional.ofNullable(phone)
                 .filter(p -> p.length() == 11)
-                .map(p -> p.substring(0, 3) + "​**​**" + p.substring(7))
+                .map(p -> p.substring(0, 3) + "****" + p.substring(7))
                 .orElse(phone);
     }
 
@@ -27,12 +27,12 @@ public class DesensitizationUtil {
      * 身份证号脱敏（保留前6后4）
      *
      * @param idCard 身份证号
-     * @return 脱敏结果（如：110105*​**​*​**​**1234）或原值（输入不合法时）
+     * @return 脱敏结果（如：110105********1234）或原值（输入不合法时）
      */
     public static String maskIdCard(String idCard) {
         return Optional.ofNullable(idCard)
                 .filter(id -> id.length() >= 15)
-                .map(id -> id.substring(0, 6) + "​**​*​**​*​**​" + id.substring(id.length() - 4))
+                .map(id -> id.substring(0, 6) + "********" + id.substring(id.length() - 4))
                 .orElse(idCard);
     }
 
@@ -40,7 +40,7 @@ public class DesensitizationUtil {
      * 车牌号脱敏（普通车牌保留前2后1，新能源车牌保留前2后2）
      *
      * @param plate 车牌号
-     * @return 脱敏结果（如：京A*​**​*8 或 京AD*​**​*12）或原值（输入不合法时）
+     * @return 脱敏结果（如：京A****8 或 京AD****12）或原值（输入不合法时）
      */
     public static String maskPlate(String plate) {
         if (StringUtils.isBlank(plate)) return plate;
@@ -48,9 +48,9 @@ public class DesensitizationUtil {
         int length = plate.length();
         // 普通车牌（7位）保留前2后1，新能源车牌（8位）保留前2后2
         if (length == 7) {
-            return plate.substring(0, 2) + "​**​**" + plate.substring(6);
+            return plate.substring(0, 2) + "****" + plate.substring(6);
         } else if (length == 8) {
-            return plate.substring(0, 2) + "​**​**" + plate.substring(6);
+            return plate.substring(0, 2) + "****" + plate.substring(6);
         }
         return plate; // 非标准车牌返回原值
     }
@@ -59,12 +59,12 @@ public class DesensitizationUtil {
      * 车架号脱敏（保留前3后4）
      *
      * @param vin 车架号（17位）
-     * @return 脱敏结果（如：LGW*​**​*ZYX0123456）或原值（输入不合法时）
+     * @return 脱敏结果（如：LGW****ZYX0123456）或原值（输入不合法时）
      */
     public static String maskVin(String vin) {
         return Optional.ofNullable(vin)
                 .filter(v -> v.length() == 17)
-                .map(v -> v.substring(0, 3) + "​**​**" + v.substring(v.length() - 4))
+                .map(v -> v.substring(0, 3) + "****" + v.substring(v.length() - 4))
                 .orElse(vin);
     }
 
